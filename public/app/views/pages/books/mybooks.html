@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="col-lg-12">
+	<h1 class="page-header"><strong>My Books:</strong></h1>
+	<form class="form-inline" ng-submit="book.addBook()">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Add Book" ng-model="book.newBook">
+		</div>
+		<button class="btn btn-micro btn-primary" type="submit">Add</button>
+	</form>
+	<br>
+	
+ 
+			<div class="results cover" ng-repeat="book in book.Books.myBooks">
+				<img class="img-responsive" ng-src={{book.thumbnail}}></img>	
+		
+			</div>
+		</div>
+		<cc-spinner is-loading="book.isLoading" message="Loading..."></cc-spinner>
+	</div>
+
+<div class="row show-hide-message" ng-show="book.message">
+   <div class="col-sm-6 col-sm-offset-2">
+     
+     <div class="alert alert-info">
+       {{ book.message }}
+     </div>
+ 
+   </div>
+ </div>

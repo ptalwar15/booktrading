@@ -1,0 +1,28 @@
+{
+  "name": "gc-angular-toaster",
+  "version": "1.0.0",
+  "main": [
+    "toaster.js",
+    "toaster.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": ">1.2.6",
+    "angular-animate": "~1.2.8"
+  },
+  "homepage": "https://github.com/Good-Coders/AngularJS-Toaster",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "33b9d9ac9a80a0c699ef9a30fca2a8dcc8432a08"
+  },
+  "_source": "git://github.com/Good-Coders/AngularJS-Toaster.git",
+  "_target": "~1.0.0",
+  "_originalSource": "gc-angular-toaster",
+  "_direct": true
+}

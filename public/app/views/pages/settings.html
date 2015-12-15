@@ -1,0 +1,38 @@
+<div class="container">
+	<h1 class="page-header"><strong>Update Profile</strong></h1>
+	<form class="form-horizontal" ng-submit="user.saveUser()">
+		<div class="form-group">
+		<label class="label-control">City
+		<input type="text" class="form-control" ng-model="user.userData.city" placeholder="Enter your city...">
+		</label>
+		</div>
+		<div class="form-group">
+		<label class="label-control">State
+		<input type="text" class="form-control" ng-model="user.userData.state" placeholder="Enter your state..."></label>
+		</div>
+		<button class="btn btn-primary" type="submit">Save Changes</button>
+	</form>
+	<br>
+	<h1 class="page-header"><strong>Change Password</strong></h1>
+	<form class="form-group" ng-submit="user.saveUser()">
+		<div class="form-group">
+		<label class="label-control">Current Password
+		<input type="password" class="form-control" ng-model="user.userData.currentPassword" placeholder="Enter your old Password..."></label>
+		</div>
+		<div class="form-group">
+		<label class="label-control">New Password
+		<input type="password" class="form-control" ng-model="user.userData.newPassword" placeholder="Enter a new Password..."></label>
+		</div>
+		<button class="btn btn-primary" type="submit">Save Changes</button>
+	</form>
+
+	<div class="row show-hide-message" ng-show="book.message">
+	   <div class="col-sm-6 col-sm-offset-2">
+	     
+	     <div class="alert alert-info">
+	       {{ user.message }}
+	     </div>
+ 
+   		</div>
+ 	</div>
+</div>

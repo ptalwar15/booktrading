@@ -1,0 +1,15 @@
+<div class="jumbotron text-center">
+	<h1>Welcome to the Book Trading Club</h1>
+
+	<div ng-if="!main.loggedIn">
+		<p>Login to manage your books or view all books posted by other users.</p>
+		<a href="/signup" class="btn btn-info">Signup</a>
+		<a href="/login" class="btn btn-primary">Login</a>
+	</div>
+	<div ng-if="main.loggedIn">
+		<a href="/allbooks" class="btn btn-info">All Books</a>
+		<a href="/mybooks" class="btn btn-primary">My Books</a>
+	</div>
+</div>
+
+<!--<ng-include src="'footer.html'"></ng-include>-->

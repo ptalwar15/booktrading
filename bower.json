@@ -1,0 +1,25 @@
+{
+  "name": "node-api",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Pradeep Talwar <ptal528@yahoo.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "gc-angular-toaster": "~1.0.0"
+  }
+}
